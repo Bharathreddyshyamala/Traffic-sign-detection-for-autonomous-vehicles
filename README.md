@@ -82,10 +82,10 @@ For real-time detection using a webcam:
 
 
 ## Results
-📊 Model Performance Metrics:
-mAP (Mean Average Precision): XX%
-Inference Speed: XX FPS
-Training Time: XX minutes
+precision(B):  0.9512642562211963
+metrics/recall(B):  0.8992293561289909
+metrics/mAP50(B):  0.9614232042646681
+metrics/mAP50-95(B):  0.8315653857288847
 
 ## Applications
 * 🚗 Autonomous Driving Systems
