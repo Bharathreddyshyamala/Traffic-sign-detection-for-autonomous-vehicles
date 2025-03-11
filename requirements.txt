@@ -1,0 +1,7 @@
+tensorflow
+numpy
+Pillow
+opencv-python
+seaborn
+ultralytics
+pandas
