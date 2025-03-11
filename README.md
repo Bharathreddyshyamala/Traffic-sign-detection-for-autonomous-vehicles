@@ -105,10 +105,10 @@ Training Time: XX minutes
 
 ✨ Contributors
 👨‍💻 BHARATH REDDY SHYAMALA
-📧 [your.email@example.com]
+📧 [bharathshyamala0501@gmail.com]
 
 👨‍💻 HANEESH REDDY NEELA
-📧 [your.email@example.com]
+📧 [haneesh.neela@gmail.com]
 
 👨‍💻 KALYAN GUTTA
 📧 [kalyangutta.18@gmail.com]
