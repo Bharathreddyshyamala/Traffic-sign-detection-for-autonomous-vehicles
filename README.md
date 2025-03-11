@@ -103,12 +103,12 @@ Training Time: XX minutes
 * [Traffic detection using YOLOv3, opencv, keras](https://www.kaggle.com/code/valentynsichkar/traffic-signs-detection-by-yolo-v3-opencv-keras)
 
 
-✨ Contributors
-👨‍💻 BHARATH REDDY SHYAMALA
+## Contributors
+*👨‍💻 BHARATH REDDY SHYAMALA
 📧 [bharathshyamala0501@gmail.com]
 
-👨‍💻 HANEESH REDDY NEELA
+*👨‍💻 HANEESH REDDY NEELA
 📧 [haneesh.neela@gmail.com]
 
-👨‍💻 KALYAN GUTTA
+*👨‍💻 KALYAN GUTTA
 📧 [kalyangutta.18@gmail.com]
