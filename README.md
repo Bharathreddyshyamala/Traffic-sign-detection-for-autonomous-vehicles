@@ -12,19 +12,17 @@ In order to control traffic, maintain road safety, and give drivers vital inform
 This project shows off YOLOv8's powerful and effective object identification features, which enable quick inference on a range of devices, including embedded AI systems, desktop GPUs, and edge devices.  This solution offers a solid basis for traffic sign identification tasks, whether for research, industry applications, or smart city efforts.
 
 **Dataset**
+
 The dataset used for training consists of images containing various traffic signs labeled with bounding boxes. The dataset includes:
 
 🚏 Speed limit signs
-
 ⚠️ Warning signs
-
 ⛔ Prohibitory signs
-
 🛑 Stop signs
-
 📍 Directional signs
 
-#Model Architecture
+**Model Architecture**
+
 The project uses YOLOv8 (You Only Look Once, Version 8) for object detection, which provides:
 
 ✅ High-speed inference
@@ -33,7 +31,7 @@ The project uses YOLOv8 (You Only Look Once, Version 8) for object detection, wh
 ✅ Flexibility for real-time application
 
 
-#Installation & Setup
+**Installation & Setup**
 To run this project on your local machine, follow these steps:
 
 1️⃣ Clone the Repository
