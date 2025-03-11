@@ -88,15 +88,19 @@ Inference Speed: XX FPS
 Training Time: XX minutes
 
 ## Applications
-🚗 Autonomous Driving Systems
-🚦 Smart Traffic Monitoring
-📊 Road Safety Analysis
-🛣️ Intelligent Transportation Systems
+* 🚗 Autonomous Driving Systems
+* 🚦 Smart Traffic Monitoring
+* 📊 Road Safety Analysis
+* 🛣️ Intelligent Transportation Systems
 
 ## Future Improvements
-🔹 Integrating Multiple Sensors to work at a time
-🔹 Improve detection speed with hardware acceleration
-🔹 Integrate with lane detection for better scene understanding
+* 🔹 Integrating Multiple Sensors to work at a time
+* 🔹 Improve detection speed with hardware acceleration
+* 🔹 Integrate with lane detection for better scene understanding
+
+## References
+* [Sign detection by DURGESH](https://github.com/DURGESH716/Traffic-Sign-Detection-For-Self-Driving-Cars/tree/main)
+* [Traffic detection using YOLOv3, opencv, keras](https://www.kaggle.com/code/valentynsichkar/traffic-signs-detection-by-yolo-v3-opencv-keras)
 
 
 ✨ Contributors
