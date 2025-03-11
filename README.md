@@ -32,14 +32,17 @@ The project uses YOLOv8 (You Only Look Once, Version 8) for object detection, wh
 
 
 **Installation & Setup**
+
 To run this project on your local machine, follow these steps:
 
 1️⃣ Clone the Repository
+
 bash
 'git clone https://github.com/your-repo/traffic-sign-detection-yolov8.git'
 'cd traffic-sign-detection-yolov8'
 
 2️⃣ Install Dependencies
+
 Ensure you have Python installed, then install the required dependencies:
 
 bash
@@ -49,7 +52,8 @@ Or install from requirements.txt:
 bash
 'pip install -r requirements.txt'
 
-#3️⃣ Train the Model (Optional)
+3️⃣ Train the Model
+
 If you want to train YOLOv8 from scratch or fine-tune on a custom dataset
 We trained the model using YOLOV8 BY BUILDING YAML
 
