@@ -21,17 +21,7 @@ sns.set(rc={'axes.facecolor': '#eae8fa'}, style='darkgrid')
 from google.colab import drive
 drive.mount('/content/drive')
 
-!mkdir ~/.kaggle
-
-!cp /content/drive/MyDrive/ColabNotebooks/kaggle.json ~/.kaggle/kaggle.json
-
-! chmod 600 ~/.kaggle/kaggle.json
-
-! kaggle datasets download -d pkdarabi/cardetection
-
-! unzip cardetection.zip
-
-Image_dir = '/content/car/train/images'
+Image_dir = '/content/car/train/images' #Link to images"
 
 num_samples = 9
 image_files = os.listdir(Image_dir)
@@ -67,8 +57,6 @@ result_predict = model.predict(source = image, imgsz=(640))
 plot = result_predict[0].plot()
 plot = cv2.cvtColor(plot, cv2.COLOR_BGR2RGB)
 display(Image.fromarray(plot))
-
-!pip install --upgrade ultralytics ray
 
 # Build from YAML and transfer weights
 Final_model = YOLO('yolov8n.pt')
