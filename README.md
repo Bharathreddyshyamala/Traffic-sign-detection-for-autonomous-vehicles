@@ -94,13 +94,9 @@ Training Time: XX minutes
 🛣️ Intelligent Transportation Systems
 
 ## Future Improvements
-🔹 Fine-tune the model with more diverse datasets
-🔹 Deploy as a real-time mobile/web application
-🔹 Improve detection speed with hardware acceleration (TensorRT, OpenVINO)
+🔹 Integrating Multiple Sensors to work at a time
+🔹 Improve detection speed with hardware acceleration
 🔹 Integrate with lane detection for better scene understanding
-
-📝 References
-
 
 
 ✨ Contributors
