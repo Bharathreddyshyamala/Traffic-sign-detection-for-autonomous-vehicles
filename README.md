@@ -1,5 +1,5 @@
 # Traffic-sign-detection-for-autonomous-vehicles
-
+**Introduction**
 This project implements Traffic Sign Detection using YOLOv8, one of the most advanced object detection models available today. The primary objective is to accurately detect and classify various traffic signs from images or video streams, making it a crucial technology for applications such as:
 * Enabling cars to automatically detect and react to traffic signs is known as autonomous driving.
 * Traffic monitoring: Assisting law enforcement in effectively assessing and controlling traffic flow.
@@ -11,13 +11,17 @@ In order to control traffic, maintain road safety, and give drivers vital inform
 
 This project shows off YOLOv8's powerful and effective object identification features, which enable quick inference on a range of devices, including embedded AI systems, desktop GPUs, and edge devices.  This solution offers a solid basis for traffic sign identification tasks, whether for research, industry applications, or smart city efforts.
 
-#Dataset
+**Dataset**
 The dataset used for training consists of images containing various traffic signs labeled with bounding boxes. The dataset includes:
 
 🚏 Speed limit signs
+
 ⚠️ Warning signs
+
 ⛔ Prohibitory signs
+
 🛑 Stop signs
+
 📍 Directional signs
 
 #Model Architecture
@@ -34,25 +38,25 @@ To run this project on your local machine, follow these steps:
 
 1️⃣ Clone the Repository
 bash
-git clone https://github.com/your-repo/traffic-sign-detection-yolov8.git
-cd traffic-sign-detection-yolov8
+'git clone https://github.com/your-repo/traffic-sign-detection-yolov8.git'
+'cd traffic-sign-detection-yolov8'
 
 2️⃣ Install Dependencies
 Ensure you have Python installed, then install the required dependencies:
 
 bash
-pip install ultralytics opencv-python numpy matplotlib
+'pip install ultralytics opencv-python numpy matplotlib'
 Or install from requirements.txt:
 
 bash
-pip install -r requirements.txt
+'pip install -r requirements.txt'
 
 #3️⃣ Train the Model (Optional)
 If you want to train YOLOv8 from scratch or fine-tune on a custom dataset
 We trained the model using YOLOV8 BY BUILDING YAML
 
 bash
-yolo task=detect mode=train model=yolov8s.pt data=dataset.yaml epochs=50 imgsz=640
+'yolo task=detect mode=train model=yolov8s.pt data=dataset.yaml epochs=50 imgsz=640'
 yolov8s.pt – Pretrained YOLOv8 model
 dataset.yaml – Path to dataset configuration
 epochs=50 – Number of training epochs
