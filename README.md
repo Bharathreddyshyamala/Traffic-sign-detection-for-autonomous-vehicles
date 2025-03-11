@@ -24,6 +24,7 @@ The dataset used for training consists of images containing various traffic sign
 
 
 
+
 ## Model Architecture
 
 The project uses YOLOv8 (You Only Look Once, Version 8) for object detection, which provides:
