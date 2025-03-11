@@ -13,26 +13,25 @@ This project shows off YOLOv8's powerful and effective object identification fea
 
 
 
-## Dataset##
+## Dataset
 
 The dataset used for training consists of images containing various traffic signs labeled with bounding boxes. The dataset includes:
-
-🚏 Speed limit signs
-⚠️ Warning signs
-⛔ Prohibitory signs
-🛑 Stop signs
-📍 Directional signs
-
+* 🚏 Speed limit signs
+* ⚠️ Warning signs
+* ⛔ Prohibitory signs
+* 🛑 Stop signs
+* 📍 Directional signs
 
 
-## Model Architecture##
+
+## Model Architecture
 
 The project uses YOLOv8 (You Only Look Once, Version 8) for object detection, which provides:
 
-✅ High-speed inference
-✅ Optimized deep learning backbone
-✅ Improved accuracy compared to previous YOLO versions
-✅ Flexibility for real-time application
+* ✅ High-speed inference
+* ✅ Optimized deep learning backbone
+* ✅ Improved accuracy compared to previous YOLO versions
+* ✅ Flexibility for real-time application
 
 
 
