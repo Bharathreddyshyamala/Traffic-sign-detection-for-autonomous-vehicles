@@ -13,7 +13,7 @@ This project shows off YOLOv8's powerful and effective object identification fea
 
 
 
-**Dataset**
+##Dataset##
 
 The dataset used for training consists of images containing various traffic signs labeled with bounding boxes. The dataset includes:
 
@@ -25,7 +25,7 @@ The dataset used for training consists of images containing various traffic sign
 
 
 
-**Model Architecture**
+##Model Architecture##
 
 The project uses YOLOv8 (You Only Look Once, Version 8) for object detection, which provides:
 
@@ -36,26 +36,26 @@ The project uses YOLOv8 (You Only Look Once, Version 8) for object detection, wh
 
 
 
-**Installation & Setup**
+##Installation & Setup##
 
 To run this project on your local machine, follow these steps:
 
 1️⃣ Clone the Repository
 
 bash
-\\\git clone https://github.com/your-repo/traffic-sign-detection-yolov8.git
-cd traffic-sign-detection-yolov8\\\
+```git clone https://github.com/your-repo/traffic-sign-detection-yolov8.git```
+```cd traffic-sign-detection-yolov8```
 
 2️⃣ Install Dependencies
 
 Ensure you have Python installed, then install the required dependencies:
 
 bash
-'pip install ultralytics opencv-python numpy matplotlib'
+```pip install ultralytics opencv-python numpy matplotlib```
 Or install from requirements.txt:
 
 bash
-'pip install -r requirements.txt'
+```pip install -r requirements.txt```
 
 3️⃣ Train the Model
 
@@ -63,7 +63,7 @@ If you want to train YOLOv8 from scratch or fine-tune on a custom dataset
 We trained the model using YOLOV8 BY BUILDING YAML
 
 bash
-'yolo task=detect mode=train model=yolov8s.pt data=dataset.yaml epochs=50 imgsz=640'
+```yolo task=detect mode=train model=yolov8s.pt data=dataset.yaml epochs=50 imgsz=640```
 yolov8s.pt – Pretrained YOLOv8 model
 dataset.yaml – Path to dataset configuration
 epochs=50 – Number of training epochs
@@ -74,11 +74,11 @@ imgsz=640 – Image size for training
 To test the trained model on images:
 
 bash
-yolo task=detect mode=predict model=best.pt source=sample_image.jpg
+```yolo task=detect mode=predict model=best.pt source=sample_image.jpg```
 For real-time detection using a webcam:
 
 bash
-yolo task=detect mode=predict model=best.pt source=0
+```yolo task=detect mode=predict model=best.pt source=0```
 
 
 🖥 Results
