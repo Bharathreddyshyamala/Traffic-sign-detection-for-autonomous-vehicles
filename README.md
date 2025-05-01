@@ -13,7 +13,7 @@ This project shows off YOLOv8's powerful and effective object identification fea
 
 
 
-## Dataset
+## **Dataset**
 
 The dataset used for training consists of images containing various traffic signs labeled with bounding boxes. The dataset includes:
 * 🚏 Speed limit signs
@@ -22,7 +22,28 @@ The dataset used for training consists of images containing various traffic sign
 * 🛑 Stop signs
 * 📍 Directional signs
 
+**Non-Maximum Suppression (NMS) Tuning:** Adjusted the default threshold from 0.5 to 0.45 to eliminate redundant bounding boxes and enhance detection reliability under complex scenes.
+### **Fairness Aspects** 
+### 1. Robustness
+Goal: To test the model’s ability to maintain accurate and confident predictions under realistic, imperfect input conditions that simulate challenges encountered in real-world environments.
 
+Perturbations Applied:
+* Brightness Adjustment: Simulates lighting changes (e.g., day/night transitions, glare).
+* Contrast Variation: Mimics fog, shadow, and exposure inconsistencies.
+* Rotation: Represents angled camera placement or tilted traffic signs.
+* Horizontal Flip: Tests symmetry awareness; important when images are mirrored or from reversed views.
+* Motion Blur: Emulates camera movement or fast-moving vehicles that blur sign visibility.
+
+**Non-Maximum Suppression (NMS) Tuning:** Adjusted the default threshold from 0.5 to 0.45 to eliminate redundant bounding boxes and enhance detection reliability under complex scenes.
+### 2. Explainability: 
+To provide transparency into model decisions, we implemented a Grad-CAM-style heatmap overlay based on the detected bounding boxes.
+
+Process
+* Selected a test image from the dataset
+* Ran YOLOv8 inference to extract predicted bounding boxes, class labels, and confidence scores
+* Used OpenCV to draw:
+* Blue bounding boxes with class labels and confidence
+* A transparent red rectangle over each detection to simulate heatmap visualization and then displayed the final annotated image using matplotlib
 
 
 ## Model Architecture
@@ -56,8 +77,11 @@ Or install from requirements.txt:
 
 #### bash
 ```pip install -r requirements.txt```
+### 3️⃣ Prepare the Dataset
+Download GTSRB Dataset from Kaggle
 
-### 3️⃣ Train the Model
+Use the notebook kaggle_data_to_colab.ipynb to mount and load data into your Colab environment.
+### 4️⃣ Train the Model
 
 If you want to train YOLOv8 from scratch or fine-tune on a custom dataset
 We trained the model using YOLOV8 BY BUILDING YAML
@@ -70,7 +94,7 @@ epochs=50 – Number of training epochs
 imgsz=640 – Image size for training
 
 
-### 4️⃣ Run Inference
+### 5️⃣ Run Inference
 To test the trained model on images:
 
 #### bash
@@ -80,20 +104,26 @@ For real-time detection using a webcam:
 #### bash
 ```yolo task=detect mode=predict model=best.pt source=0```
 
-### Robustness
-Goal: To test the model’s ability to maintain accurate and confident predictions under realistic, imperfect input conditions that simulate challenges encountered in real-world environments.
+### 6️⃣ Evaluate Model Robustness
+In Final_Trustworthy.ipynb:
+Locate the Robustness Evaluation cell block
+This runs YOLO on augmented test images using:
+* Brightness changes
+* Contrast variation
+* Rotation
+* Horizontal flipping
+* Motion blur
+The script calculates the Mean, Min, Max Confidence scores
+Outputs a summary table and a bar chart of mean confidence under each transformation
 
-Perturbations Applied:
-Brightness Adjustment: Simulates lighting changes (e.g., day/night transitions, glare).
-Contrast Variation: Mimics fog, shadow, and exposure inconsistencies.
-Rotation: Represents angled camera placement or tilted traffic signs.
-Horizontal Flip: Tests symmetry awareness; important when images are mirrored or from reversed views.
-Motion Blur: Emulates camera movement or fast-moving vehicles that blur sign visibility.
+### 7️⃣ Run Explainability Visualization
+In the same notebook:
+Locate the Explainability Visualization section
+Replace the image_path variable with a test image path
+Run the block to generate a heatmap-style visualization over the detected signs
+This helps visually confirm that YOLOv8 is focusing on the correct regions
 
-With Robustness:
-1.Maintains performance in challenging inputs
-2.Works reliably across varied environments
-3.Increases system trustworthiness and reliability 
+No additional CLI command is needed — just run the relevant cells inside the notebook.
 
  
 
