@@ -13,7 +13,7 @@ This project shows off YOLOv8's powerful and effective object identification fea
 
 
 
-## Dataset
+## **Dataset**
 
 The dataset used for training consists of images containing various traffic signs labeled with bounding boxes. The dataset includes:
 * 🚏 Speed limit signs
@@ -21,8 +21,9 @@ The dataset used for training consists of images containing various traffic sign
 * ⛔ Prohibitory signs
 * 🛑 Stop signs
 * 📍 Directional signs
-  
-###Fairness Aspects 
+
+**Non-Maximum Suppression (NMS) Tuning:** Adjusted the default threshold from 0.5 to 0.45 to eliminate redundant bounding boxes and enhance detection reliability under complex scenes.
+### **Fairness Aspects** 
 ### 1. Robustness
 Goal: To test the model’s ability to maintain accurate and confident predictions under realistic, imperfect input conditions that simulate challenges encountered in real-world environments.
 
@@ -33,7 +34,7 @@ Perturbations Applied:
 * Horizontal Flip: Tests symmetry awareness; important when images are mirrored or from reversed views.
 * Motion Blur: Emulates camera movement or fast-moving vehicles that blur sign visibility.
 
-
+**Non-Maximum Suppression (NMS) Tuning:** Adjusted the default threshold from 0.5 to 0.45 to eliminate redundant bounding boxes and enhance detection reliability under complex scenes.
 ### 2. Explainability: 
 To provide transparency into model decisions, we implemented a Grad-CAM-style heatmap overlay based on the detected bounding boxes.
 
