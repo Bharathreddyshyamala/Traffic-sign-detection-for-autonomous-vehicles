@@ -34,7 +34,7 @@ Perturbations Applied:
 * Motion Blur: Emulates camera movement or fast-moving vehicles that blur sign visibility.
 
 
-### 2.Explainability: Visual Bounding Box Overlays
+### 2. Explainability: 
 To provide transparency into model decisions, we implemented a Grad-CAM-style heatmap overlay based on the detected bounding boxes.
 
 Process
