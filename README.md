@@ -22,16 +22,16 @@ The dataset used for training consists of images containing various traffic sign
 * 🛑 Stop signs
 * 📍 Directional signs
   
-####Fairness Aspects 
+###Fairness Aspects 
 ### 1. Robustness
 Goal: To test the model’s ability to maintain accurate and confident predictions under realistic, imperfect input conditions that simulate challenges encountered in real-world environments.
 
 Perturbations Applied:
-Brightness Adjustment: Simulates lighting changes (e.g., day/night transitions, glare).
-Contrast Variation: Mimics fog, shadow, and exposure inconsistencies.
-Rotation: Represents angled camera placement or tilted traffic signs.
-Horizontal Flip: Tests symmetry awareness; important when images are mirrored or from reversed views.
-Motion Blur: Emulates camera movement or fast-moving vehicles that blur sign visibility.
+* Brightness Adjustment: Simulates lighting changes (e.g., day/night transitions, glare).
+* Contrast Variation: Mimics fog, shadow, and exposure inconsistencies.
+* Rotation: Represents angled camera placement or tilted traffic signs.
+* Horizontal Flip: Tests symmetry awareness; important when images are mirrored or from reversed views.
+* Motion Blur: Emulates camera movement or fast-moving vehicles that blur sign visibility.
 
 
 ### 2.Explainability: Visual Bounding Box Overlays
