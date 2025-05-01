@@ -80,6 +80,22 @@ For real-time detection using a webcam:
 #### bash
 ```yolo task=detect mode=predict model=best.pt source=0```
 
+### Robustness
+Goal: To test the model’s ability to maintain accurate and confident predictions under realistic, imperfect input conditions that simulate challenges encountered in real-world environments.
+
+Perturbations Applied:
+Brightness Adjustment: Simulates lighting changes (e.g., day/night transitions, glare).
+Contrast Variation: Mimics fog, shadow, and exposure inconsistencies.
+Rotation: Represents angled camera placement or tilted traffic signs.
+Horizontal Flip: Tests symmetry awareness; important when images are mirrored or from reversed views.
+Motion Blur: Emulates camera movement or fast-moving vehicles that blur sign visibility.
+
+With Robustness:
+1.Maintains performance in challenging inputs
+2.Works reliably across varied environments
+3.Increases system trustworthiness and reliability 
+
+ 
 
 ## Results
 - precision(B):  0.9512642562211963
