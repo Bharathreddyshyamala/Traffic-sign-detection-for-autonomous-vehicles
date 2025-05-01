@@ -1,0 +1,13 @@
+
+flipud: 0.0       # Vertical flip probability
+fliplr: 0.5       # Horizontal flip probability
+hsv_h: 0.015      # Hue shift
+hsv_s: 0.7        # Saturation shift
+hsv_v: 0.4        # Brightness shift
+mosaic: 1.0       # Mosaic augmentation
+rotate: 40        # Rotation degrees
+scale: 0.5        # Scaling factor
+translate: 0.1    # Translation factor
+shear: 0.0        # Shearing factor
+perspective: 0.0  # Perspective distortion
+blur: 0.1         # Motion blur
